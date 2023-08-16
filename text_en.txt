@@ -1,0 +1,108 @@
+    1  - Change language
+    2  - Show menu
+    3  - Change menu
+    4  - View your order
+    5  - View the dishes that have a discount
+    6  - About the author
+    7  - Title page
+    8  - Description of the subject area
+    —————————————————————————————————————————————————————————————————
+    F10 - Exit Application
+    F10 - Back
+   Press any key to continue...
+   Press any key to select a dish...
+    1  - Hot dishes
+    2  - Pizza
+    3  - Salads
+    4  - Drinks
+    [Error]
+    No such application command
+Menu not selected
+You have not added any dishes to your order
+    Good bye!                              
+Quesadilla
+Manti
+Salmon steak
+Steak teriyaki
+Chop
+Margarita
+Pepperoni
+With salmon
+With pineapple
+4 cheeses
+Herzog
+Caesar
+Vegetable
+Vitamin
+Meat
+Smoothie
+Cola
+Cappuccino
+Fresh
+Mojito
+Hot dishes
+Pizza
+Salads
+Drinks
+| N |      Name      |    Size    |    Cost     |
+Menu
+| N |      Name      |     Type     |    Size    |    Cost     |
+Discount in 
+ applies to: 
+    You have selected the delivery type: Pickup
+    You choose the delivery type: Delivery from place
+    Your order will arrive in 
+ minute
+ minutes
+ minutes
+Maximum 10 dishes in your order
+   Press any number to select a dish or letter...
+    P - change payment type
+    D - change delivery type
+    O - checkout
+    Type of payment: Cash
+    Payment type: Cashless
+    The total cost of the meal(deliver+stocks): 
+    Do you confirm the payment?(y-yes,n-no)
+    Thank you for your purchase!           
+Total dishes: 
+Incorrect path specified
+Yakubenko V.V. Option 24
+Instructor: Morozova O.V.
+Ministry of Education and Science of the DPR
+Donetsk National Technical University
+CST Department
+Department of PI
+Course project
+on the discipline: "Object-oriented programming"
+On the subject: "Object-oriented system "Online Restaurant""
+Checked:
+Performed:
+Senior Lecturer of the PI Department
+PI-21c student
+O.V. Morozova.
+Yakubenko V.V.
+Donetsk - 2022
+In the simulated object-oriented program 
+"Interactive restaurant menu", the user will be able to select 
+the desired dishes by price and weight, method of payment, view an approximate 
+delivery time, place an order. There will also be an opportunity to order 
+and select the method of delivery.
+Create a Menu class that includes the following elements:
+- field "type" (main, business lunch, wine list, etc.) cchar * Type;
+- The "dishes" field Dish * dishes; 
+- GetType() method for getting the char * GetType();
+- method of getting the average cost of the dish float GetAvgCost();
+- constructors with the parameters Menu (ñhar * Type, int DishCount) and Menu (ñhar * Type).
+Create the Dish class, which includes the following elements:
+- field "name" char * Name; 
+- field "type" (appetizer, first course, side dish, drink, etc.) char * Type;
+- field "cost" float Cost; 
+- field "portion size" (in grams, milliliters, etc.) int Size; 
+- method of getting the name char * GetName();
+- method for getting the type of dish char * GetType();
+- method for getting the cost float GetCost();
+- int GetSize(); method for getting the portion size;
+- Constructor with parameters Dish (char * Name, char * Type, float Cost, int Size).
+In the Menu class overload operator < (binary class operator), 
+new action - adding a dish to the menu.

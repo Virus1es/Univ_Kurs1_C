@@ -1,0 +1,132 @@
+#pragma once
+
+#pragma region перечисление_фраз
+enum filePosition {
+	firstTask = 0,
+	printMenuTask,
+	changeMenuTask,
+	ShowUserOffer,
+	ShowStockDishes,
+	ShowInfo,
+	ShowTitul,
+	ShowObjectArea,
+	footerTask,
+	endTask,
+	BackTask,
+	pressKey,
+	СhooseDishKey,
+	HotMenu,
+	PizzaMenu,
+	SaltMenu,
+	DrinkMenu,
+	firstError,
+	SecondError,
+	MenuDoesntChoose,
+	DontOfferedDish,
+	GoodBye,
+	Dish1,
+	Dish2,
+	Dish3,
+	Dish4,
+	Dish5,
+	Dish6,
+	Dish7,
+	Dish8,
+	Dish9,
+	Dish10,
+	Dish11,
+	Dish12,
+	Dish13,
+	Dish14,
+	Dish15,
+	Dish16,
+	Dish17,
+	Dish18,
+	Dish19,
+	Dish20,
+	TypeMenu1,
+	TypeMenu2,
+	TypeMenu3,
+	TypeMenu4,
+	TableRow,
+	RowInMenu,
+	OfferTableRow,
+	StockIn,
+	ActiveOn,
+	FirstTypeDeliver,
+	SecondTypeDeliver,
+	OrderArived,
+	FormMinute1,
+	FormMinute2,
+	FormMinute3,
+	DishMaxOrder,
+	СhooseDishOrCommandKey,
+	CommandP,
+	CommandD,
+	CommandO,
+	FirstPay,
+	SecondPay,
+	SumCostDish,
+	AcceptOrder,
+	ThxForOrder,
+	ForCountDish,
+	WrongPath,
+	AboutMe1,
+	AboutMe2,
+	TitMinobr,
+	TitDonNTU,
+	TitFakul,
+	TitCaf,
+	TitKursProj,
+	TitDiscip,
+	TitTema,
+	TitCheck,
+	TitDo,
+	TitPrep,
+	TitStud,
+	TitMorozova,
+	TitMe,
+	TitDonetsk,
+	ObjectAreaRow1,
+	ObjectAreaRow2,
+	ObjectAreaRow3,
+	ObjectAreaRow4,
+	ObjectAreaRow5,
+	ObjectAreaRow6,
+	ObjectAreaRow7,
+	ObjectAreaRow8,
+	ObjectAreaRow9,
+	ObjectAreaRow10,
+	ObjectAreaRow11,
+	ObjectAreaRow12,
+	ObjectAreaRow13,
+	ObjectAreaRow14,
+	ObjectAreaRow15,
+	ObjectAreaRow16,
+	ObjectAreaRow17,
+	ObjectAreaRow18,
+	ObjectAreaRow19,
+	ObjectAreaRow20,
+	ObjectAreaRow21,
+	ObjectAreaRow22,
+	ObjectAreaRow23
+};
+#pragma endregion
+
+// функция смены языка
+void ChangeLang(char*** ArrFrases, int CountRow, int CountLetterInRow);
+
+// создание массива строк
+char** create(int CountRow, int CountLetterInRow);
+
+// удаление массива строк
+void destroy(char** frases, int CountRow);
+
+// функция смены меню
+void ChangeCurrentMenu(Menu* CurrentMenu, int MenuCount, char** ArrFrases);
+
+// функция для заполнения меню
+void fillMenu(Menu* CurrentMenu);
+
+// функция для заполнения всевозможных блюд
+void fillDishes(char** ArrFrases);
